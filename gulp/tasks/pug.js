@@ -4,7 +4,7 @@ module.exports = function () {
       .pipe($.glp.pug({
         pretty: true
       }))
-      .pipe($.gulp.dest('dist'))
+      .pipe($.gulp.dest('/'))
       .on('end', $.bs.reload);
   });
 };
