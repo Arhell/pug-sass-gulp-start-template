@@ -1,7 +1,7 @@
 module.exports = function () {
   $.gulp.task('stylus', function () {
     return $.gulp.src('src/stylus/*.styl')
-      .pipe($.glp.sourcemaps.init())
+      //.pipe($.glp.sourcemaps.init())
       .pipe($.glp.stylus({
         'include css': true
       }))
@@ -13,7 +13,7 @@ module.exports = function () {
         title: "Stylus error"
       }))
       .pipe($.glp.csso())
-      .pipe($.glp.sourcemaps.write())
+      //.pipe($.glp.sourcemaps.write())
       .pipe($.gulp.dest('dist/css'))
       .pipe($.bs.reload({
         stream: true
