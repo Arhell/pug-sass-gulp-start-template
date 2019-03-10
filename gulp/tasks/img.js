@@ -7,6 +7,6 @@ module.exports = function () {
         [$.glp.mozjpeg()],
         {verbose: true}
       ))
-      .pipe($.gulp.dest('dist/img'));
+      .pipe($.gulp.dest('img'));
   });
 };
