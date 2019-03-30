@@ -1,1 +1,1 @@
-https://arhell.github.io/SHT/
+https://arhell.github.io/GHT/
