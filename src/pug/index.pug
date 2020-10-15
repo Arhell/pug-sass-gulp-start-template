@@ -53,8 +53,12 @@ html(lang='en')
 
     main
       section.install
-        h2.h2#install
-          | How to install
+        .container
+          h2.h2#install
+            | How to install
+
+          a(href="https://nodejs.org/" target="_blank")
+            | Download & install NodeJs
 
         .macbook
           .macbook-position
@@ -62,9 +66,11 @@ html(lang='en')
               .macbook-screen-position
                 .macbook-screen
                   p
-                    | npm install gulp-cli
+                    | npm install --global gulp-cli
                   p
-                    | npm install
+                    | npm install gulp
+                  p
+                    | gulp
 
           .macbook-body
           .macbook-bottom-cover
@@ -77,12 +83,9 @@ html(lang='en')
         h2.h2
           | Structure
 
-        .window
-          .window-header
-            .window-header-buttons
+        .container
 
-          .window-body
-            .window-text
+
 
     footer.footer
       a(href='https://github.com/Arhell/SHT', target='_blank')
